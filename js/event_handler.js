@@ -1,7 +1,4 @@
-  var eventLog = document.getElementById('myEventLog');
   var searchBox = document.getElementById('search');
-  var customSearchBox = document.getElementById('customSearchBox');
-  var customSearchButton =document.getElementById('customSearchButton');
   var piplineSelector1 = document.getElementById('pipeline-selector1');
   var piplineSelector2 = document.getElementById('pipeline-selector2');
 
@@ -25,11 +22,6 @@
   piplineSelector2.addEventListener('click', function(){
     switch_pipeline('kevin_pipeline_2');
   });
-  
-  customSearchButton.addEventListener('click', function(event){
-    logEvent("Executing: " + customSearchBox.value);
-    console.log(args);
-  })
   
   Coveo.$$(search).on('doneBuildingQuery', function(event, args){
     logEvent("Query Building Completed");
