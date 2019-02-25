@@ -3,6 +3,12 @@
   var customSearchBox = document.getElementById('customSearchBox');
   var customSearchButton =document.getElementById('customSearchButton');
 
+
+  function switch_pipeline(pipeline_name){
+    var searchRoot = document.getElementById('search');
+    searchRoot.setAttribute("pipeline", pipeline_name);
+  }
+
   function logEvent(message){
     var dt = new Date();
     var utcDate = dt.toUTCString();

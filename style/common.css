@@ -3,6 +3,11 @@
     100% { transform: rotate(360deg); }
   }
 
+  .pipeline-selector {
+    margin: 8px;
+    display: inline-block;
+  }
+
   .loader {
     margin: auto;
     padding: 10px;
